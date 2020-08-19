@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&display=swap');
+
+@font-face {
+    font-family: "Louis-George-Cafe";
+    src: url("/fonts/Louis-George-Cafe.ttf");
+}
+
+@font-face {
+    font-family: "Louis-George-Cafe-Light";
+    src: url("/fonts/Louis-George-Cafe-Light.ttf");
+}
+
+
+@font-face {
+    font-family: "Break Types";
+    src: url("/fonts/BreakTypes.otf");
+}
+
+@font-face {
+    font-family: "makinethai";
+    src: url("/fonts/makinethai.svg");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+section{
+    width: 100%;
+    height: 30vh;
+}
+
+hr{
+    width: 50vw;
+}
+
+/*Carousel*/
+
+.actu{
+    overflow: hidden;
+    width: 980px;
+    margin: auto;
+    padding: 150px 0px 150px 0px;
+}
+
+.pic {
+    display: flex;
+    transition:ease-in-out 1s;
+}
+
+.pic>img {
+    width: 980px;
+}
+
+/*Nav*/
+
+.navigation{
+    z-index: 10000;
+    height: 15vh;
+    position: fixed;
+    background-color: black;
+    border-bottom: 0.5px solid orange;
+}
+
+nav{
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: row;  
+    background-color: black;
+}
+
+.box1 img{
+    width: 45%;
+    padding: 6vw;
+    
+}
+
+.box1{
+    position: absolute;
+    width: 40%;
+    height:15vh;
+    display: flex;
+    align-items: center;
+}
+
+.box2{
+    position: absolute;
+    right: 0%;
+    width: 40%;
+    height:15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Louis-George-Cafe', sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a:hover{
+    transform: scale(0.98);
+    transition-duration: 300ms;
+    color: rgb(71, 71, 71);
+}
+
+/*Main*/
+
+header{
+    width: 100vw;
+    height: 100%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+
+main h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14vh;
+    font-weight: 900;
+    position: absolute;
+    top: 30vh;
+    left:5vw;
+    animation: blur 1.4s ease-in-out;
+}
+
+@keyframes blur{
+
+0%{
+    filter: blur(20px);
+}
+100%{
+    filter: blur(0px);
+}
+
+}
+
+/*Introduction*/
+
+#intro{
+    width: 100vw;
+    height: 65vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#intro .content{
+    position: absolute;
+    left: 7%;
+    right :10%;
+    grid-column-start: 0;
+}
+
+#intro .content-2{
+    grid-column-start: 2;
+
+}
+#intro h2{
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 8vh;
+    font-weight: 900;
+}
+
+#intro p{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 3vh;
+    font-weight: 100;
+}
+
+/* Menu */
+
+#menu{
+    width: 100vw;
+    height: 130vh;
+}
+
+
+/* Informations */
+
+#info{
+    width: 100vw;
+    height: 135vh;
+}
+
+#info .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 101vh;
+}
+
+#info .content p{
+    text-align: center;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+#info iframe{
+    width:75vw;
+    height:70vh;
+    border:2px white solid;
+    align-self: center;
+}
+
+#info .content-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+#info .content-2 p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+    font-weight: 200;
+}
+
+
+#info .content-2 img{
+    width: 4vw;
+}
+
+.contact-info{
+    text-align: center;
+}
+
+.contact-info p{
+    text-align: left;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;   
+
+}
+
+.grid-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+footer .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer .content p{
+    color: grey;
+    font-family: 'Louis-George-Cafe';
+    font-size: 1.5vh;
+}
+
+h3{
+    color: white;
+    font-family: 'Louis-George-Cafe';
+    font-size: 2vh;
+    justify-self: baseline;
+}
+
+
+footer .content-svg{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.grid-svg{
+    display: grid;
+    grid-template-columns: 4vw 4vw 4vw 4vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-rs:hover{
+    transform: scale(0.85);
+    transition-duration: 300ms;
+}
+
+.content-svg h3{
+    justify-self: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+svg{
+     width: 50%;
+     height: 6vh;
+}
+
+path{
+    fill: white;
+}
+
+.copyright{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    font-family: 'Louis-George-Cafe';
+    font-size: 1.5vh;
+}
